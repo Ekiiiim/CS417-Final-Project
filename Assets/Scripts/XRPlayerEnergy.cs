@@ -1,5 +1,10 @@
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using Unity.XR.CoreUtils;
+using UnityEngine.XR;
+using XRCommonUsages = UnityEngine.XR.CommonUsages;
+using XRInputDevice = UnityEngine.XR.InputDevice;
 
 public class XRPlayerEnergy : MonoBehaviour
 {
@@ -80,8 +85,8 @@ public class XRPlayerEnergy : MonoBehaviour
 
     private static bool InputSprintRequested()
     {
-        return UnityEngine.InputSystem.Keyboard.current != null &&
-               UnityEngine.InputSystem.Keyboard.current.leftShiftKey.isPressed;
+        return Keyboard.current != null && Keyboard.current.leftShiftKey.isPressed ||
+               VRControllerInput.IsTriggerPressedOnEitherHand();
     }
 
 #if UNITY_EDITOR
@@ -95,4 +100,90 @@ public class XRPlayerEnergy : MonoBehaviour
         sprintStartEnergy = Mathf.Clamp(sprintStartEnergy, 1f, maxEnergy);
     }
 #endif
+}
+
+internal static class VRControllerInput
+{
+    private const float ButtonAxisThreshold = 0.5f;
+    private static readonly List<XRInputDevice> Devices = new();
+    private static InputAction sprintAction;
+
+    public static bool IsTriggerPressedOnEitherHand()
+    {
+        if (ReadSprintAction())
+        {
+            return true;
+        }
+
+        return IsTriggerPressed(XRNode.LeftHand) || IsTriggerPressed(XRNode.RightHand);
+    }
+
+    private static bool ReadSprintAction()
+    {
+        if (sprintAction == null)
+        {
+            sprintAction = new InputAction("VR Sprint", InputActionType.Button);
+            sprintAction.AddBinding("<XRController>{LeftHand}/trigger");
+            sprintAction.AddBinding("<XRController>{LeftHand}/triggerPressed");
+            sprintAction.AddBinding("<XRController>{RightHand}/trigger");
+            sprintAction.AddBinding("<XRController>{RightHand}/triggerPressed");
+            sprintAction.AddBinding("<XRController>/trigger");
+            sprintAction.AddBinding("<XRController>/triggerPressed");
+        }
+
+        if (!sprintAction.enabled)
+        {
+            sprintAction.Enable();
+        }
+
+        return sprintAction.IsPressed();
+    }
+
+    private static bool IsTriggerPressed(XRNode hand)
+    {
+        if (TryGetButton(hand, XRCommonUsages.triggerButton))
+        {
+            return true;
+        }
+
+        return TryGetDevice(hand, out XRInputDevice device) &&
+               device.TryGetFeatureValue(XRCommonUsages.trigger, out float triggerValue) &&
+               triggerValue >= ButtonAxisThreshold;
+    }
+
+    private static bool TryGetButton(XRNode hand, InputFeatureUsage<bool> usage)
+    {
+        return TryGetDevice(hand, out XRInputDevice device) &&
+               device.TryGetFeatureValue(usage, out bool isPressed) &&
+               isPressed;
+    }
+
+    private static bool TryGetDevice(XRNode hand, out XRInputDevice device)
+    {
+        device = InputDevices.GetDeviceAtXRNode(hand);
+        if (device.isValid)
+        {
+            return true;
+        }
+
+        Devices.Clear();
+        InputDeviceCharacteristics handCharacteristic = hand == XRNode.LeftHand
+            ? InputDeviceCharacteristics.Left
+            : InputDeviceCharacteristics.Right;
+
+        InputDevices.GetDevicesWithCharacteristics(
+            InputDeviceCharacteristics.Controller | handCharacteristic,
+            Devices);
+
+        foreach (XRInputDevice candidate in Devices)
+        {
+            if (candidate.isValid)
+            {
+                device = candidate;
+                return true;
+            }
+        }
+
+        return false;
+    }
 }
