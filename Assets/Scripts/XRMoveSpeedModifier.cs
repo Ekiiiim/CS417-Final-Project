@@ -19,7 +19,8 @@ public class XRMoveSpeedModifier : MonoBehaviour
 
     private void Update()
     {
-        bool sprintRequested = Keyboard.current != null && Keyboard.current.leftShiftKey.isPressed;
+        bool sprintRequested = Keyboard.current != null && Keyboard.current.leftShiftKey.isPressed ||
+                               VRControllerInput.IsTriggerPressedOnEitherHand();
         bool isSprinting = sprintRequested && (energySystem == null || energySystem.CanSprint);
         ApplySpeed(isSprinting ? sprintSpeed : walkSpeed);
     }
