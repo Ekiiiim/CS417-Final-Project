@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2e33fe6a72a28684a8e088f246a50dc8
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 262311
+  packageName: Laboratory-interior
+  packageVersion: 1.0
+  assetPath: Assets/Laboratory/Settings/LaboratoryProfile.asset
+  uploadId: 742550

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c8b602ef3038ea243a819cf93a3e3af0
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 262311
+  packageName: Laboratory-interior
+  packageVersion: 1.0
+  assetPath: Assets/Laboratory/Prefabs/Interior/AC.prefab
+  uploadId: 742550

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: db4b3c37411e5994eb46debfd17eff02
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 262311
+  packageName: Laboratory-interior
+  packageVersion: 1.0
+  assetPath: Assets/Laboratory/Materials/Exterior/LightFrame.mat
+  uploadId: 742550

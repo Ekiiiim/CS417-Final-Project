@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3b4c0c632156a54479007da7ec5a3cd7
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 262311
+  packageName: Laboratory-interior
+  packageVersion: 1.0
+  assetPath: Assets/Laboratory/Materials/Interior/Table_2.mat
+  uploadId: 742550

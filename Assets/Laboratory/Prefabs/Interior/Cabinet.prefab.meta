@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9649d1697e9f70c4b95c575d0be726f3
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 262311
+  packageName: Laboratory-interior
+  packageVersion: 1.0
+  assetPath: Assets/Laboratory/Prefabs/Interior/Cabinet.prefab
+  uploadId: 742550

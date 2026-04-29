@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7e5482a77cf70c240b1b4fc5c46040c9
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 262311
+  packageName: Laboratory-interior
+  packageVersion: 1.0
+  assetPath: Assets/Laboratory/Prefabs/Exterior/DoorFrame_2.prefab
+  uploadId: 742550

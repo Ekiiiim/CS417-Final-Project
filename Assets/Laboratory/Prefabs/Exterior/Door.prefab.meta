@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 900ff3259765b8a43b836b2bb8e46f6f
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 262311
+  packageName: Laboratory-interior
+  packageVersion: 1.0
+  assetPath: Assets/Laboratory/Prefabs/Exterior/Door.prefab
+  uploadId: 742550

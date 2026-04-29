@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2bbf452482df06b43874a7713a3a1c8a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 262311
+  packageName: Laboratory-interior
+  packageVersion: 1.0
+  assetPath: Assets/Laboratory/Prefabs/Interior/TableGlass.prefab
+  uploadId: 742550

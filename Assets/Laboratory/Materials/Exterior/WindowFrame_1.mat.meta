@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4db06869cc747c1459836f2056cd1514
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 262311
+  packageName: Laboratory-interior
+  packageVersion: 1.0
+  assetPath: Assets/Laboratory/Materials/Exterior/WindowFrame_1.mat
+  uploadId: 742550

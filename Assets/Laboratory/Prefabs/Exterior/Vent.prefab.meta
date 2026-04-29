@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c0ff04569978f7c449990e62ba9ed94b
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 262311
+  packageName: Laboratory-interior
+  packageVersion: 1.0
+  assetPath: Assets/Laboratory/Prefabs/Exterior/Vent.prefab
+  uploadId: 742550

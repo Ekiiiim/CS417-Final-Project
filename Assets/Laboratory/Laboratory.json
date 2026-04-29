@@ -1,0 +1,12 @@
+{
+  "name": "com.jimik.Laboratory",
+  "version": "1.0.0",
+  "displayName": "Laboratory",
+  "description": "This asset package contains a laboratory scene with 47 meshes, 32 materials, and 44 texture maps. Supporting PBR workflow, it’s optimized for mobile, PC, and VR platforms. Most textures feature 2048x2048 resolution, including normal maps, roughness maps, and base color maps. Fully compatible with URP (Universal Render Pipeline)..",
+  "unity": "2021.3.10",
+  "keywords": ["Laboratory", "Indoor"],
+  "author": {
+    "name": "jimi.k",
+    "email": "xjm0813@gmail.com"
+  }
+}

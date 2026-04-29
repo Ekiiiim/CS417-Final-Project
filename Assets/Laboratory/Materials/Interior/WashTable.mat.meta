@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 04de896299b611f4081c1c7d820c51b3
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 262311
+  packageName: Laboratory-interior
+  packageVersion: 1.0
+  assetPath: Assets/Laboratory/Materials/Interior/WashTable.mat
+  uploadId: 742550

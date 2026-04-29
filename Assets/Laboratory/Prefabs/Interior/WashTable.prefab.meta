@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b2f5d5791c157fa4eb48dc414441d2fa
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 262311
+  packageName: Laboratory-interior
+  packageVersion: 1.0
+  assetPath: Assets/Laboratory/Prefabs/Interior/WashTable.prefab
+  uploadId: 742550

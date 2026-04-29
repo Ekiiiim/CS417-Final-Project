@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e26ad4aa4b6f47042b50da47167d8b7f
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 262311
+  packageName: Laboratory-interior
+  packageVersion: 1.0
+  assetPath: Assets/Laboratory/Prefabs/Interior/CurtainRod_2.prefab
+  uploadId: 742550

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: be99cdf2fff4f2b44b2ea688ff07ff0f
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 262311
+  packageName: Laboratory-interior
+  packageVersion: 1.0
+  assetPath: Assets/Laboratory/Laboratory.json
+  uploadId: 742550

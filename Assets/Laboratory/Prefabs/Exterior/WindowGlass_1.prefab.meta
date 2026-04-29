@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2195d0353903d9e47b02baa3b0d3daa8
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 262311
+  packageName: Laboratory-interior
+  packageVersion: 1.0
+  assetPath: Assets/Laboratory/Prefabs/Exterior/WindowGlass_1.prefab
+  uploadId: 742550

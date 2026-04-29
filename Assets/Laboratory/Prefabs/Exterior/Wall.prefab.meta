@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 51c26481a59eb9d419dd2c6baa14767b
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 262311
+  packageName: Laboratory-interior
+  packageVersion: 1.0
+  assetPath: Assets/Laboratory/Prefabs/Exterior/Wall.prefab
+  uploadId: 742550
